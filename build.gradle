@@ -9,7 +9,13 @@ ext {
 }
 
 application {
-    mainClassName = javaMainClass
+    mainClass = javaMainClass
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(15)
+    }
 }
 
 group 'me.koxrel'
