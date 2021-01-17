@@ -1,8 +1,6 @@
 package me.koxrel.designpatterns.strategypayment.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NonNull;
 
 import java.math.BigDecimal;
 

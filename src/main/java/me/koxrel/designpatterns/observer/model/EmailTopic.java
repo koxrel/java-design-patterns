@@ -10,6 +10,7 @@ import java.util.List;
 public class EmailTopic implements Subject {
     private final List<Observer> observers = new ArrayList<>();
     private String message;
+
     @Override
     public void register(@NonNull Observer observer) {
         if (!observers.contains(observer)) {

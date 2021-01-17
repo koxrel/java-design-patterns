@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 import java.math.BigDecimal;
 
 @RequiredArgsConstructor
-public class PaypalPayment implements Payment{
+public class PaypalPayment implements Payment {
     private final String email;
     private final String password;
 
