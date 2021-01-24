@@ -34,5 +34,14 @@ public class Main {
     public static void main(String[] args) {
         var pattern = PatternExample.FACADE;
         pattern.runDriver();
+
+        boolean v = false;
+        if (v == true) {
+            System.out.println("True");
+        } else if (v == false) {
+            System.out.println("False");
+        } else {
+            System.out.println("never gonna happen!");
+        }
     }
 }
