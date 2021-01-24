@@ -2,6 +2,7 @@ plugins {
     id 'application'
     id 'java'
     id "io.freefair.lombok" version "5.3.0"
+    id "org.sonarqube" version "3.0"
 }
 
 ext {
@@ -32,4 +33,12 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "koxrel_java-design-patterns"
+        property "sonar.organization", "koxrel"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
