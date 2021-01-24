@@ -4,7 +4,7 @@ import me.koxrel.designpatterns.Driver;
 import me.koxrel.designpatterns.observer.model.EmailTopic;
 import me.koxrel.designpatterns.observer.model.EmailTopicSubscriber;
 
-public class Observer implements Driver {
+public class ObserverPattern implements Driver {
     @Override
     public void run() {
         var topic = new EmailTopic();

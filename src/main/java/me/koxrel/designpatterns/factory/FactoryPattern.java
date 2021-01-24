@@ -6,7 +6,7 @@ import me.koxrel.designpatterns.factory.model.Hamburger;
 import me.koxrel.designpatterns.factory.model.JamHamburgerStore;
 import me.koxrel.designpatterns.factory.model.MozHamburgerStore;
 
-public class Factory implements Driver {
+public class FactoryPattern implements Driver {
     @Override
     public void run() {
         MozHamburgerStore mozambicanBurgerStore = new MozHamburgerStore();

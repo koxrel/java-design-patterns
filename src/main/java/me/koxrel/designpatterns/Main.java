@@ -1,16 +1,16 @@
 package me.koxrel.designpatterns;
 
 import lombok.RequiredArgsConstructor;
-import me.koxrel.designpatterns.decorator.Decorator;
-import me.koxrel.designpatterns.factory.Factory;
-import me.koxrel.designpatterns.observer.Observer;
+import me.koxrel.designpatterns.decorator.DecoratorPattern;
+import me.koxrel.designpatterns.factory.FactoryPattern;
+import me.koxrel.designpatterns.observer.ObserverPattern;
 import me.koxrel.designpatterns.singleton.SingletonPattern;
 import me.koxrel.designpatterns.strategypayment.StrategyPayment;
 import me.koxrel.designpatterns.strategyscore.StrategyScore;
 
 @RequiredArgsConstructor
 enum PatternExample {
-    STRATEGY_SCORE(new StrategyScore()), STRATEGY_PAYMENT(new StrategyPayment()), OBSERVER(new Observer()), DECORATOR(new Decorator()), FACTORY(new Factory()), SINGLETON(new SingletonPattern());
+    STRATEGY_SCORE(new StrategyScore()), STRATEGY_PAYMENT(new StrategyPayment()), OBSERVER(new ObserverPattern()), DECORATOR(new DecoratorPattern()), FACTORY(new FactoryPattern()), SINGLETON(new SingletonPattern());
 
     private final Driver patternDriver;
 

@@ -6,7 +6,7 @@ import me.koxrel.designpatterns.decorator.model.BasicIceCream;
 import me.koxrel.designpatterns.decorator.model.MintIceCream;
 import me.koxrel.designpatterns.decorator.model.VanillaIceCream;
 
-public class Decorator implements Driver {
+public class DecoratorPattern implements Driver {
     @Override
     public void run() {
         IceCream basicIceCream = new BasicIceCream();
