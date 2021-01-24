@@ -1,6 +1,7 @@
 package me.koxrel.designpatterns;
 
 import lombok.RequiredArgsConstructor;
+import me.koxrel.designpatterns.command.CommandPattern;
 import me.koxrel.designpatterns.decorator.DecoratorPattern;
 import me.koxrel.designpatterns.factory.FactoryPattern;
 import me.koxrel.designpatterns.observer.ObserverPattern;
@@ -10,7 +11,13 @@ import me.koxrel.designpatterns.strategyscore.StrategyScore;
 
 @RequiredArgsConstructor
 enum PatternExample {
-    STRATEGY_SCORE(new StrategyScore()), STRATEGY_PAYMENT(new StrategyPayment()), OBSERVER(new ObserverPattern()), DECORATOR(new DecoratorPattern()), FACTORY(new FactoryPattern()), SINGLETON(new SingletonPattern());
+    STRATEGY_SCORE(new StrategyScore()),
+    STRATEGY_PAYMENT(new StrategyPayment()),
+    OBSERVER(new ObserverPattern()),
+    DECORATOR(new DecoratorPattern()),
+    FACTORY(new FactoryPattern()),
+    SINGLETON(new SingletonPattern()),
+    COMMAND(new CommandPattern());
 
     private final Driver patternDriver;
 
@@ -21,7 +28,7 @@ enum PatternExample {
 
 public class Main {
     public static void main(String[] args) {
-        var pattern = PatternExample.SINGLETON;
+        var pattern = PatternExample.COMMAND;
         pattern.runDriver();
     }
 }
