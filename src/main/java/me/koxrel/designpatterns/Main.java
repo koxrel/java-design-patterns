@@ -1,6 +1,7 @@
 package me.koxrel.designpatterns;
 
 import lombok.RequiredArgsConstructor;
+import me.koxrel.designpatterns.adapter.AdapterPattern;
 import me.koxrel.designpatterns.command.CommandPattern;
 import me.koxrel.designpatterns.decorator.DecoratorPattern;
 import me.koxrel.designpatterns.factory.FactoryPattern;
@@ -17,7 +18,8 @@ enum PatternExample {
     DECORATOR(new DecoratorPattern()),
     FACTORY(new FactoryPattern()),
     SINGLETON(new SingletonPattern()),
-    COMMAND(new CommandPattern());
+    COMMAND(new CommandPattern()),
+    ADAPTER(new AdapterPattern());
 
     private final Driver patternDriver;
 
@@ -28,7 +30,7 @@ enum PatternExample {
 
 public class Main {
     public static void main(String[] args) {
-        var pattern = PatternExample.COMMAND;
+        var pattern = PatternExample.ADAPTER;
         pattern.runDriver();
     }
 }
