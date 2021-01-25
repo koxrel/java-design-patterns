@@ -20,7 +20,7 @@ java {
 }
 
 group 'me.koxrel'
-version '1.0-SNAPSHOT'
+version '1.1.0'
 
 repositories {
     mavenCentral()
@@ -41,4 +41,8 @@ sonarqube {
         property "sonar.organization", "koxrel"
         property "sonar.host.url", "https://sonarcloud.io"
     }
+}
+
+run {
+    standardInput = System.in
 }

@@ -10,6 +10,7 @@ import me.koxrel.designpatterns.observer.ObserverPattern;
 import me.koxrel.designpatterns.singleton.SingletonPattern;
 import me.koxrel.designpatterns.strategypayment.StrategyPayment;
 import me.koxrel.designpatterns.strategyscore.StrategyScore;
+import me.koxrel.designpatterns.template.TemplatePattern;
 
 @RequiredArgsConstructor
 enum PatternExample {
@@ -21,7 +22,8 @@ enum PatternExample {
     SINGLETON(new SingletonPattern()),
     COMMAND(new CommandPattern()),
     ADAPTER(new AdapterPattern()),
-    FACADE(new FacadePattern());
+    FACADE(new FacadePattern()),
+    TEMPLATE(new TemplatePattern());
 
     private final Driver patternDriver;
 
@@ -32,7 +34,7 @@ enum PatternExample {
 
 public class Main {
     public static void main(String[] args) {
-        var pattern = PatternExample.FACADE;
+        var pattern = PatternExample.TEMPLATE;
         pattern.runDriver();
     }
 }
