@@ -6,6 +6,7 @@ import me.koxrel.designpatterns.command.CommandPattern;
 import me.koxrel.designpatterns.decorator.DecoratorPattern;
 import me.koxrel.designpatterns.facade.FacadePattern;
 import me.koxrel.designpatterns.factory.FactoryPattern;
+import me.koxrel.designpatterns.iterator.IteratorPattern;
 import me.koxrel.designpatterns.observer.ObserverPattern;
 import me.koxrel.designpatterns.singleton.SingletonPattern;
 import me.koxrel.designpatterns.strategypayment.StrategyPayment;
@@ -23,7 +24,8 @@ enum PatternExample {
     COMMAND(new CommandPattern()),
     ADAPTER(new AdapterPattern()),
     FACADE(new FacadePattern()),
-    TEMPLATE(new TemplatePattern());
+    TEMPLATE(new TemplatePattern()),
+    ITERATOR(new IteratorPattern());
 
     private final Driver patternDriver;
 
@@ -34,7 +36,7 @@ enum PatternExample {
 
 public class Main {
     public static void main(String[] args) {
-        var pattern = PatternExample.TEMPLATE;
+        var pattern = PatternExample.ITERATOR;
         pattern.runDriver();
     }
 }
