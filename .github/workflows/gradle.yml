@@ -28,9 +28,9 @@ jobs:
     
     - name: Build with Gradle
       run: ./gradlew build
-    
-    - name: Run Sonar Analysis
-      env:
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ./gradlew sonarqube
+#     
+#     - name: Run Sonar Analysis
+#       env:
+#         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       run: ./gradlew sonarqube
